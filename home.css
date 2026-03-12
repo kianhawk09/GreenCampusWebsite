@@ -1,26 +1,59 @@
 body {
-background-color: rgb(80, 80, 80);
+   background-image: url(TESTEST.png); 
+   background-size: 1920px 1892px;
+   background-repeat: no-repeat;
+   height: 300vh;
+}
+
+.Header1 {
+    color: white;
+    font-family: 'Inria Serif';
+    font-size: 76px;
+    position: relative;
+    top: 425px;
+    left: 75px;
 }
 
 .NavBar {
-    background-color: rgba(201, 201, 201, 0.5);
     border-radius: 30px;
+    --border-width: 1px;
+    background: hsl(from white h s l / 0.2);
+    backdrop-filter: blur(5px);
+
     height: 40px;
     width: 22%;
     padding-left: 20px;
     display: flex;
     align-items: center;
     position: sticky;
+    top: 30px;
     margin: auto;
     margin-top: -40px;
     gap: 40px;
     justify-content: left;
 }
 
+.NavBar::before {
+    content:'';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.411), rgba(170, 170, 170, 0.411)) border-box;
+    z-index: -1;
+    border-radius: inherit;
+    border: var(--border-width) solid transparent;
+    mask: linear-gradient(black 0 0) border-box, linear-gradient(black 0 0) padding-box;
+    mask-composite: subtract;
+}
+
 .NavBar a {
     margin-top: 0px;
     font-family: 'Inter';
     color: white;
+}
+
+.NavBar a:hover {
+    color: rgb(224, 224, 224);
+    /* Make this surround the text instead of just being the text */
 }
 
 .dropdown {
@@ -38,5 +71,24 @@ background-color: rgb(80, 80, 80);
     width: auto;
     padding-left: 40px;
     position: sticky;
-    margin-top: 20px;
+    top: 30px;
+    margin-top: 25px;
 }
+
+#scrolldown {
+    position: relative;
+    height: 100px;
+    top: 400px;
+    left: 75px;
+}
+
+.inria-serif-bold {
+  font-family: "Inria Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+ /* background: 
+        radial-gradient(circle at 50% 300%, rgb(233, 233, 233), rgb(175, 175, 175)) padding-box,
+        linear-gradient(rgb(255, 255, 255), rgb(170, 170, 170)) border-box; */
+    /*
