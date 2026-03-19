@@ -32,7 +32,7 @@ body {
 
 #H3 {
     position: relative;
-    top: 35px;
+    top: 25px;
     text-align: center;
 }
 
@@ -50,7 +50,7 @@ body {
 
 #H6 {
     position: relative;
-    top: 595px;
+    top: 570px;
     left: 250px;
     z-index: 1;
 }
@@ -67,7 +67,7 @@ body {
     width: 80%;
 
     position: relative;
-    top: 500px;
+    top: 475px;
     left: 200px;
     align-items: center;
     justify-content: center;
@@ -110,19 +110,20 @@ body {
 .NavBar {
     border-radius: 30px;
     --border-width: 1px;
-    background: hsl(from white h s l / 0.2);
+    background: hsl(from rgb(160, 160, 160) h s l / 0.2);
     backdrop-filter: blur(5px);
 
     height: 40px;
     width: 22%;
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     align-items: center;
     position: sticky;
     top: 30px;
     margin: auto;
     margin-top: -40px;
-    gap: 40px;
+    gap: 20px;
     justify-content: left;
 }
 
@@ -138,21 +139,60 @@ body {
     mask-composite: subtract;
 }
 
-.NavBar a {
+.NavBar div {
     margin-top: 0px;
     font-family: 'Inter';
     color: white;
-}
-
-.NavBar a:hover {
-    color: rgb(224, 224, 224);
-    /* Make this surround the text instead of just being the text */
 }
 
 .dropdown {
     height: 20px;
     margin-left: -38px;
 }
+
+.navbarsection {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: left;
+}
+
+.navbarsection:hover {
+    background: hsl(from rgb(196, 255, 187) h s l / 0.15);
+    backdrop-filter: blur(5px);
+    height: 35px;
+    border-radius: 20px;
+}
+
+#nv1 {
+    width: 60px;
+    justify-content: center; 
+    align-items: center;
+}
+
+#nv2 {
+    width: 25%;
+    padding-left: 10px;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+#nv3 {
+    width: 25%;
+    padding-left: 10px;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+#nv4 {
+    width: 25%;
+    padding-left: 10px;
+    justify-content: center; 
+    align-items: center;
+}
+
 
 #HomeButton {
     height: 24px;
@@ -181,7 +221,7 @@ body {
   font-style: normal;
 }
 
- /* background: 
-        radial-gradient(circle at 50% 300%, rgb(233, 233, 233), rgb(175, 175, 175)) padding-box,
-        linear-gradient(rgb(255, 255, 255), rgb(170, 170, 170)) border-box; */
-    /*
+a {
+    text-decoration: none;
+    color: white;
+}
