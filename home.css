@@ -1,17 +1,110 @@
 body {
-   background-image: url(TESTEST.png); 
+   background-image: url(TESTESTSAT.png); 
    background-size: 1920px 1892px;
    background-repeat: no-repeat;
-   height: 300vh;
+   height: 198vh;
+   position: relative;
 }
 
 .Header1 {
     color: white;
     font-family: 'Inria Serif';
     font-size: 76px;
+}
+
+.Header2 {
+    color: white;
+    font-family: 'Inria Serif';
+    font-size: 38px;
+}
+
+#H1 {
     position: relative;
     top: 425px;
     left: 75px;
+}
+
+#H2 {
+    position: relative;
+    top: 550px;
+    left: 50px;
+}
+
+#H3 {
+    position: relative;
+    top: 35px;
+    text-align: center;
+}
+
+#H4 {
+    position: relative;
+    top: 25px;
+    text-align: center;
+}
+
+#H5 {
+    position: relative;
+    top: 35px;
+    text-align: center;
+}
+
+#H6 {
+    position: relative;
+    top: 595px;
+    left: 250px;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    border-radius: 30px;
+    --border-width: 1px;
+    background: hsl(from rgb(51, 82, 53) h s l / 0.15);
+    backdrop-filter: blur(3px);
+    border-color: white;
+
+    height: 500px;
+    width: 80%;
+
+    position: relative;
+    top: 500px;
+    left: 200px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container::before {
+    content:'';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.411), rgba(170, 170, 170, 0.411)) border-box;
+    z-index: -1;
+    border-radius: inherit;
+    border: var(--border-width) solid transparent;
+    mask: linear-gradient(black 0 0) border-box, linear-gradient(black 0 0) padding-box;
+    mask-composite: subtract;
+}
+
+.container .child {
+    width: 400px;
+    height: 400px;
+    margin: 60px;
+
+    position: relative;
+    top: 15px;
+    
+}
+
+.container .child img {
+    position: relative;
+    top: 20px;
+
+    width: 400px;
+    height: 250px;
+    border-radius: 30px;
+
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.7);
 }
 
 .NavBar {
