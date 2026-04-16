@@ -1,17 +1,124 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Events</title>
-        <link rel="stylesheet" href="home.css">
-        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GreenCampus</title>
+  <link rel="stylesheet" href="events.css">
+</head>
+<body>
 
-        <link rel="icon" type="image/x-icon" href="GC.png">
-    </head>
-    <body>
+<div class="overlay">
 
-    </body>
+  <img id="Logo1" src="GreenCampusLogo.png">
+        <div class="NavBar">
+           <div class="navbarsection" id="nv1">
+            <a href="index.html"><img id="HomeButton" class="active" src="Home.png"></a>
+           </div>
+           <div class="navbarsection" id="nv2">
+            <div><a href="personal.html">Personal</a></div> <img class="dropdown" src="DropDown.png">
+           </div>
+            <div class="navbarsection" id="nv3">
+            <div><a href="events.html">Events</a></div> <img class="dropdown" src="DropDown.png">
+           </div>
+           <div class="navbarsection" id="nv4">
+            <div><a href="about.html">About</a></div> <img class="dropdown" src="DropDown.png">
+           </div>
+        </div>
+
+  <!-- FILTER -->
+  <div class="filter-container">
+    <button class="filter-btn">
+      <img src="filterpic.png" class="filter-icon"> Filter
+    </button>
+
+    <div class="filter-dropdown">
+      <p data-type="all">All</p>
+      <p data-type="Clean-up">Clean-up</p>
+      <p data-type="Planting">Planting</p>
+      <p data-type="Sports">Sports</p>
+    </div>
+  </div>
+
+  <h1 class="title">Events List</h1>
+
+  <div class="container">
+
+    <!-- CALENDAR -->
+    <div class="calendar">
+      <h3>May</h3>
+
+      <div class="weekdays">
+        <div>Mo</div><div>Tu</div><div>We</div>
+        <div>Th</div><div>Fr</div><div>Sa</div><div>Su</div>
+      </div>
+
+      <div class="days">
+        <div class="empty"></div><div class="empty"></div><div data-day="1">1</div>
+        <div data-day="2">2</div><div data-day="3">3</div><div data-day="4">4</div><div data-day="5">5</div>
+        <div data-day="6">6</div><div data-day="7">7</div><div data-day="8">8</div><div data-day="9">9</div>
+        <div data-day="10">10</div><div data-day="11">11</div><div data-day="12">12</div><div data-day="13">13</div>
+        <div data-day="14">14</div><div data-day="15">15</div><div data-day="16">16</div><div data-day="17">17</div>
+        <div data-day="18">18</div><div data-day="19">19</div><div data-day="20">20</div><div data-day="21">21</div>
+        <div data-day="22">22</div><div data-day="23">23</div><div data-day="24">24</div><div data-day="25">25</div>
+        <div data-day="26">26</div><div data-day="27">27</div><div data-day="28">28</div><div data-day="29">29</div>
+        <div class="active" data-day="30">30</div><div data-day="31">31</div>
+      </div>
+
+      <div id="eventPreview" class="event-preview">
+        Park clean-up <br> 30 May 10:00
+      </div>
+    </div>
+
+    <!-- EVENTS -->
+    <div class="events">
+
+      <div class="card" data-type="Clean-up">
+        <div>
+          <h3>Park clean-up</h3>
+          <p>30 May 10:00</p>
+          <p>Cleaning up trash near the college</p>
+        </div>
+        <button>Learn more</button>
+      </div>
+
+      <div class="card" data-type="Planting">
+        <div>
+          <h3>Tree Planting</h3>
+          <p>15 March 12:00</p>
+          <p>Join students planting trees</p>
+        </div>
+        <button>Learn more</button>
+      </div>
+
+      <div class="card" data-type="Clean-up">
+        <div>
+          <h3>Campus Clean-Up</h3>
+          <p>18 April 15:00</p>
+          <p>Students clean campus</p>
+        </div>
+        <button>Learn more</button>
+      </div>
+
+      <div class="card" data-type="Sports">
+        <div>
+          <h3>Bike to College Day</h3>
+          <p>27 September 9:00</p>
+          <p>Students come to college by bicycle instead of by car.</p>
+        </div>
+        <button>Learn more</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- BUTTONS -->
+  <div class="bottom-buttons">
+    <button class="big-btn">Add to Calendar</button>
+    <button class="big-btn">I will attend</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>
