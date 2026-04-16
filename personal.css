@@ -210,6 +210,12 @@ body {
     outline-style: solid;
 }
 
+.tertiarycontainer :hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+} 
+
 #H4 {
     position: relative;
     top: 10px;
