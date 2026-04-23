@@ -39,7 +39,7 @@ body {
 
 #H4 {
     position: relative;
-    top: -1vh;
+    top: -2vh;
     text-align: center;
     font-size: 2vw;
 }
@@ -61,6 +61,7 @@ body {
 
 .container {
     display: flex;
+    flex-wrap: nowrap;
     border-radius: 30px;
     --border-width: 1px;
     background: hsl(from rgb(51, 82, 53) h s l / 0.15);
@@ -69,7 +70,7 @@ body {
 
     /* height: 55vh;  */
     width: 80vw;
-
+ 
     position: relative;
     top: 50vh;
     left: 10vw;
@@ -97,6 +98,8 @@ body {
 
     position: relative;
     top: 1vh;
+
+    flex-shrink: .4;
     
 }
 
