@@ -234,7 +234,55 @@ body {
     bottom: 100px;
 }
 
+#H5_2 {
+    position: relative;
+    left: 325px;
+    bottom: 100px;
+}
+
+#H6_2 {
+    position: relative;
+    left: 325px;
+    bottom: 100px;
+}
+
 #button1 {
+    position: relative;
+    bottom: 110px;
+    left: 177px;
+
+    width: 50px;
+    
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+    border: none;
+    border-radius: 25px;
+    outline-width: 1px;
+    outline-color: rgb(255, 255, 255);
+    outline-style: solid;
+}
+
+#button2 {
+    position: relative;
+    bottom: 110px;
+    left: 177px;
+
+    width: 50px;
+    
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+    border: none;
+    border-radius: 25px;
+    outline-width: 1px;
+    outline-color: rgb(255, 255, 255);
+    outline-style: solid;
+}
+
+#button3 {
     position: relative;
     bottom: 110px;
     left: 177px;
