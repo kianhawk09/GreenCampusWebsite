@@ -67,7 +67,7 @@ body {
     backdrop-filter: blur(3px);
     border-color: white;
 
-    height: 55vh; 
+    /* height: 55vh;  */
     width: 80vw;
 
     position: relative;
