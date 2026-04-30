@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: 'Inter';
   background: url('Nature6.jpg');
   background-size: cover;
   color: white;
@@ -76,7 +76,7 @@ body {
 }
 
 #nv2 {
-    width: 25%;
+    width: 36%;
     padding-left: 10px;
     justify-content: center; 
     align-items: center;
@@ -100,8 +100,9 @@ body {
 
 
 #HomeButton {
-    height: 24px;
-    padding-right: 5px;
+  height: 24px;
+  padding-right: 5px;
+  background: none;
 }
 
 #Logo1 {
@@ -341,6 +342,6 @@ input[type="date"] {
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
